@@ -1,3 +1,7 @@
+This fork is 1:1 of recent/stable Pusher, except that is manually going to have "lives" set to 99999 instead of 2
+
+Normally, with Pusher, it will revert to another connection type (like XHR streaming), but custom Pusher backends don't support these, so its more useful to force it to always use websockets. Currently we only use websockets through our socket server so this change has to be made.
+
 # Pusher Channels Javascript Client
 
 ![test badge](https://github.com/pusher/pusher-js/workflows/test/badge.svg)
